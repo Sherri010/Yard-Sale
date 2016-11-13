@@ -13,7 +13,7 @@
         <img src="cat.jpg" alt="Contact Person">
           <%= i.get_user%>
       </div>
-      <%= link_to "call dibs" %>
+      <%= link_to "call dibs",add_to_cart_path(i.id),method:"post" %>
       <div class="card-reveal">more info</div>
     </div>
   </div>
