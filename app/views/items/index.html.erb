@@ -7,13 +7,13 @@
   <div class="col s12 m6 l3">
     <div class="card sticky-action">
       <h3><%= i.name %></h3>
-      <div class="chip">
-        <img src="cat.jpg" alt="Contact Person">
-          <%= get_user(i) %>
-      </div>
 
       <div class="card-action">$<%= i.price %></div>
-      <%= link_to "Add" %>
+      <div class="chip">
+        <img src="cat.jpg" alt="Contact Person">
+          <%= i.get_user%>
+      </div>
+      <%= link_to "call dibs" %>
       <div class="card-reveal">more info</div>
     </div>
   </div>
