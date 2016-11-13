@@ -10,5 +10,11 @@
        <!-- <li class="active"><a href="users/">logout</a></li> -->
        <% end %>
      </ul>
+      <% if user_signed_in? %>
+       <ul class="right hide-on-med-and-down">
+         <li><a href="#">dibs</a></li>
+         <li><a href="#">profile</a></li>
+       </ul>
+      <% end %>
    </div>
  </nav>

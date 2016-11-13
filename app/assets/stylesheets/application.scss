@@ -44,3 +44,25 @@ body{
   min-height: 200px;
   padding:20px;
 }
+
+.cart{
+  width:60px;
+  height:50px;
+  position: fixed;
+  top: 300px;
+  left: 0px;
+  padding:10px;
+  z-index:10;
+}
+
+.img-cart{
+  width:50px;
+  height: 50px;
+}
+
+.cart_amount{
+  background: beige;
+  border-radius: 5px;
+  width:20px;
+  height:20px;
+}
