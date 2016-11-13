@@ -1,1 +1,21 @@
-<h1> Yard items </h1>
+
+<div class="banner_one">
+  <h3 class="intro">Welcome to Yard Sale! </h3>
+</div>
+ <div class="row">
+<% @items.each do |i| %>
+  <div class="col s12 m6 l3">
+    <div class="card sticky-action">
+      <h3><%= i.name %></h3>
+      <div class="chip">
+        <img src="cat.jpg" alt="Contact Person">
+          <%= get_user(i) %>
+      </div>
+
+      <div class="card-action">$<%= i.price %></div>
+      <%= link_to "Add" %>
+      <div class="card-reveal">more info</div>
+    </div>
+  </div>
+<% end %>
+</div>

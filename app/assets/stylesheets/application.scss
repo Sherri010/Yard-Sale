@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+
+@import "materialize/components/color";
+@import 'materialize';
+
+
+body{
+  font-family: 'Poiret One', cursive;
+}
+.brand-logo{
+ font-family: 'Great Vibes', cursive;
+}
+.banner_one{
+  width:50%;
+  margin: 0 auto;
+  background:    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),url('ban.jpg');
+  background-repeat:no-repeat;
+  min-height: 400px;
+}
+.intro{
+  text-align: center;
+  color:#fff;
+  padding-top: 100px;
+}
+.card{
+  min-height: 200px;
+  padding:20px;
+}
