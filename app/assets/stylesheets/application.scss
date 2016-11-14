@@ -60,6 +60,7 @@ body{
   height: 50px;
 }
 
+
 .cart_amount{
   background: beige;
   border-radius: 5px;
@@ -83,4 +84,18 @@ body{
 
 .center{
   text-align: center;
+}
+
+.your_cart{
+  padding-bottom:50px;
+}
+.cart_list{
+
+  padding:30px;
+  //border:1px dotted #000;
+}
+
+.actions{
+  text-align: center;
+  padding:20px;
 }
