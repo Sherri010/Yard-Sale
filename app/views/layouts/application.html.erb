@@ -16,7 +16,7 @@
       <p class="alert"><%= alert %></p>
       <div class="cart">
         <a href="/mycart">
-          <span class="cart_amount">$23.50</span><img class="img-cart" src="bag.png">
+          <span class="cart_amount">$<%=session[:total]%></span><img class="img-cart" src="bag.png">
         </a>
       </div>
        <%= yield %>
