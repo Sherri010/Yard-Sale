@@ -11,15 +11,15 @@
 
   <body>
     <%= render 'partials/nav' %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <div class="cart">
-      <a href="/mycart">
-        <span class="cart_amount">$23.50</span><img class="img-cart" src="bag.png">
-      </a>
-    </div>
     <div class="container">
-     <%= yield %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <div class="cart">
+        <a href="/mycart">
+          <span class="cart_amount">$23.50</span><img class="img-cart" src="bag.png">
+        </a>
+      </div>
+       <%= yield %>
     </div>
   </body>
 </html>

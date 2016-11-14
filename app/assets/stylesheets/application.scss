@@ -60,9 +60,42 @@ body{
   height: 50px;
 }
 
+
 .cart_amount{
   background: beige;
   border-radius: 5px;
   width:20px;
   height:20px;
+}
+
+.notice {
+  color:#c62828;
+  background: #ffcdd2 ;
+  text-align: center;
+
+}
+
+.alert{
+  color:#00838f;
+  background: #b2ebf2;
+  text-align: center;
+
+}
+
+.center{
+  text-align: center;
+}
+
+.your_cart{
+  padding-bottom:50px;
+}
+.cart_list{
+
+  padding:30px;
+  //border:1px dotted #000;
+}
+
+.actions{
+  text-align: center;
+  padding:20px;
 }

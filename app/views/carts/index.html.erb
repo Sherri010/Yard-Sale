@@ -1,0 +1,23 @@
+<h3 class="center your_cart"> You Shopping Bag </h3>
+<div class="container cart_list z-depth-2">
+  <table>
+    <tbody>
+  <% @cart.each do |c| %>
+  <tr>
+     <td><h5><%= Item.find(c.item_id).name %></h5></td>
+     <td><p>$<%=  Item.find(c.item_id).price %></p></td>
+     <td><p> owner: <%= User.find(c.user_id).first_name %> </p></td>
+     <td><%= link_to "X" , remove_cart_item_path(c.item_id),method:"delete" %></td>
+  </tr>
+   <% end %>
+   <tr>
+     <td><h6>Total:</h6></td><td><%=@total%></td>
+   </tr>
+   </tbody>
+  </table>
+
+</div>
+<div class="actions">
+  <a class="waves-effect waves-light btn-large">Checkout<br> <%=@total%></a>
+  <a class="waves-effect waves-light btn-large cyan darken-3">Clear all dibs</a>
+</div>
