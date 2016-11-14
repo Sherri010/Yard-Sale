@@ -14,11 +14,13 @@
     <div class="container">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
-      <div class="cart">
-        <a href="/mycart">
-          <span class="cart_amount">$<%=session[:total]%></span><img class="img-cart" src="bag.png">
-        </a>
-      </div>
+      <% if user_signed_in? %>
+        <div class="cart">
+          <a href="/mycart">
+            <span class="cart_amount">$<%=session[:total]%></span><img class="img-cart" src="bag.png">
+          </a>
+        </div>
+      <% end %>
        <%= yield %>
     </div>
   </body>
