@@ -13,6 +13,7 @@ class CartsController < ApplicationController
     else
       flash[:notice] = "oh no! something went wrong...try again"
     end
+      get_total(Cart.where(user_id:current_user.id))
       redirect_to items_path
   end
 
@@ -24,10 +25,13 @@ class CartsController < ApplicationController
 
 private
  def get_total(cart)
-   sum = 0
+   sum = 0.00
    cart.each do |i|
      sum += Item.find(i.item_id).price
    end
+   session[:total]=sum
    return sum
+
+
  end
 end
