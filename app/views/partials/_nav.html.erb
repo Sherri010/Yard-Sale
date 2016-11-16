@@ -12,8 +12,8 @@
      </ul>
       <% if user_signed_in? %>
        <ul class="right hide-on-med-and-down">
-         <li><a href="#">dibs</a></li>
-         <li><a href="#">profile</a></li>
+         <li><a href="/mycart">dibs</a></li>
+         <li><%=link_to "Profile", user_path(current_user.id)%></li>
        </ul>
       <% end %>
    </div>
