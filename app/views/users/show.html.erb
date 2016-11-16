@@ -1,0 +1,26 @@
+ <h4>Hi <%= @user.first_name  %>!</h4>
+ <div class="row">
+
+      <div id="info" class=" col s3  blue-grey darken-4">
+        <!-- Grey navigation panel -->
+        <ul>
+           <li><b> <%= @user.first_name %> <%= @user.last_name %></b></li>
+           <li> <%= @user.email %></li>
+           <li>Address:  <%= @user.address %></li>
+           <li> <%= @user.city %></li>
+           <li><%= @user.state %> </li>
+        </ul>
+      </div>
+
+      <div id="history" class=" col s9 blue-grey lighten-3">
+        <!-- Teal page content  -->
+        <div id="owns">
+          <ul>
+            <% @owns.each do |i| %>
+            <li> <%= i.name %> - $<%= i.price %> </li>
+             <% end %>
+          </ul>
+        </div>
+      </div>
+
+    </div>
