@@ -10,6 +10,7 @@
            <li> <%= @user.city %></li>
            <li><%= @user.state %> </li>
         </ul>
+        <a class="waves-effect waves-teal btn-flat">Edit</a>
       </div>
 
       <div id="history" class=" col s9 blue-grey lighten-3">
@@ -17,7 +18,8 @@
         <div id="owns">
           <ul>
             <% @owns.each do |i| %>
-            <li> <%= i.name %> - $<%= i.price %> </li>
+            <li> <%= i.name %> - $<%= i.price %>  -
+                 <% if i.available %>  not sold<%else%><b> sold</b><% end %></li>
              <% end %>
           </ul>
         </div>
