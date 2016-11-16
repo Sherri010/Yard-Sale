@@ -16,12 +16,18 @@
       <div id="history" class=" col s9 blue-grey lighten-3">
         <!-- Teal page content  -->
         <div id="owns">
-          <ul>
-            <% @owns.each do |i| %>
-            <li> <%= i.name %> - $<%= i.price %>  -
-                 <% if i.available %>  not sold<%else%><b> sold</b><% end %></li>
-             <% end %>
-          </ul>
+          <h5> Your items for sale: </h5>
+           <table>
+            <tbody>
+              <% @owns.each do |i| %>
+              <tr>
+                <td> <%= i.name %> </td>
+                <td> $<%= i.price %> </td>
+                <td><% if i.available %><b>not sold</b><%else%> sold<% end %></td>
+              </tr>
+               <% end %>
+            </tbody>
+          </table>
         </div>
       </div>
 
